@@ -1,3 +1,33 @@
+lzo2 (2.06-1) unstable; urgency=low
+
+  * New upstream release
+  * Fixed lintian warning brace-expansion-in-debhelper-config-file
+
+ -- Peter Eisentraut <petere@debian.org>  Thu, 10 Nov 2011 07:11:13 +0200
+
+lzo2 (2.05-2) unstable; urgency=low
+
+  * Converted to multiarch
+  * Changed priority to optional to match override
+
+ -- Peter Eisentraut <petere@debian.org>  Mon, 01 Aug 2011 14:48:33 +0300
+
+lzo2 (2.05-1) unstable; urgency=low
+
+  * New upstream release
+  * Updated standards version
+  * Removed *.la file (closes: #622467)
+
+ -- Peter Eisentraut <petere@debian.org>  Mon, 04 Jul 2011 20:09:22 +0300
+
+lzo2 (2.04-1) unstable; urgency=low
+
+  * New upstream release (closes: #610732)
+  * Updated standards version
+  * Changed to debhelper level 8
+
+ -- Peter Eisentraut <petere@debian.org>  Sat, 19 Feb 2011 08:36:13 +0200
+
 lzo2 (2.03-2) unstable; urgency=low
 
   * Changed source format to 3.0 (quilt)
