@@ -1,3 +1,30 @@
+lzo2 (2.08-1) unstable; urgency=low
+
+  * New upstream release (closes: #752861) (CVE-2014-4607)
+  * Update standards version
+  * Add autotools-dev to build dependencies (closes: #750622)
+
+ -- Peter Eisentraut <petere@debian.org>  Mon, 14 Jul 2014 21:03:12 -0400
+
+lzo2 (2.06-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Correct /usr/lib/liblzo2.so symlink (Closes: #720749)
+
+ -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Mon, 26 Aug 2013 20:25:00 +0100
+
+lzo2 (2.06-1.1) unstable; urgency=low
+
+  * Non-maintainer upload to unbreak btrfs/installer.
+  * Install libzo2 library into /lib, because btrfs user space now depends
+    on this library and thus is needed before /usr might be
+    mounted. (Closes: #709422)
+  * Create libzo2-2-udeb, for the debian-installer to use btrfs at install
+    time.
+  * Piggy-back release-goal, mark dev package Multi-Arch (Closes: #681840)
+
+ -- Dmitrijs Ledkovs <xnox@debian.org>  Fri, 16 Aug 2013 09:53:32 +0100
+
 lzo2 (2.06-1) unstable; urgency=low
 
   * New upstream release
