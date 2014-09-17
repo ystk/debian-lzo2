@@ -1,3 +1,12 @@
+lzo2 (2.03-2+deb6u1) squeeze-lts; urgency=medium
+
+  * Non-maintainer upload by the Squeeze LTS Team.
+  * Add CVE-2014-4607.patch from DSA-2995-1.
+    CVE-2014-4607: lzo1x_decompress_safe() integer overflow allowing denial
+    of service or code execution. (Closes: #752861)
+
+ -- Holger Levsen <holger@debian.org>  Mon, 11 Aug 2014 16:38:29 +0200
+
 lzo2 (2.03-2) unstable; urgency=low
 
   * Changed source format to 3.0 (quilt)
