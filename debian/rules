@@ -9,6 +9,7 @@ DEB_INSTALL_CHANGELOGS_ALL = NEWS
 DEB_INSTALL_DOCS_ALL =
 DEB_MAKE_CHECK_TARGET = check test
 DEB_DH_MAKESHLIBS_ARGS = --add-udeb=liblzo2-2-udeb
+CPPFLAGS += -DLZO_CFG_MODERN_C=1
 
 common-install-impl::
 	mkdir -p $(DEB_DESTDIR)/lib/$(DEB_HOST_MULTIARCH)

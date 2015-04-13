@@ -1,3 +1,26 @@
+lzo2 (2.08-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Adjust patch from previous upload so the "modern C" code path still
+    defines some typedefs: lzo_memops_TU1p is a pointer to unsigned byte
+    (used by the byteswapping implementation on non-powerpc big-endian
+    architectures), and lzo_memops_TU2p and lzo_memops_TU4p
+    are pointers to unsigned 2- and 4-byte quantities (needed by the
+    powerpc assembler implementation). Together, these fix FTBFS on
+    big-endian platforms. (Closes: #773580)
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 20 Dec 2014 17:50:38 +0000
+
+lzo2 (2.08-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Replace liblzo's reinvention of memcpy() with calls to memcpy().
+    gcc already knows how to inline memcpy calls with constant n,
+    and also gets the alignment constraints right, avoiding incorrect
+    unaligned accesses on armel (Closes: #757037)
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 16 Dec 2014 23:35:36 +0000
+
 lzo2 (2.08-1) unstable; urgency=low
 
   * New upstream release (closes: #752861) (CVE-2014-4607)
